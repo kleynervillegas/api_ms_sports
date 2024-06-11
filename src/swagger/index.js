@@ -7,5 +7,5 @@ export const options = {
         description: "documentacion de api"
       },
     },
-    apis: ["./libs/swagger/*js"],
+    apis: ["./src/swagger/*js"],
   }

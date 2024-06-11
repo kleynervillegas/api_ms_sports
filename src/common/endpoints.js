@@ -1,4 +1,4 @@
 export const URLS ={
-
-    VERSION: '/version'
+    VERSION: '/version',
+    CONNECT: '/connect'
 }
