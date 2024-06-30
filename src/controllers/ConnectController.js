@@ -6,6 +6,7 @@ const ConnectController = express.Router();
 const connectService = new ConnectService()
 
 ConnectController.get(URLS.CONNECT, async (req, res) => {
+  
   await connectService.connectCamera(req.user,req.headers.origin)
     .then((result) => {
       // const response = new ResponseService(
@@ -16,6 +17,8 @@ ConnectController.get(URLS.CONNECT, async (req, res) => {
       res.status(200).send(result);
     })
     .catch((error) => {
+
+      console.log(error);
       // const response = new ResponseService(
       //   STATUS(error),
       //   null,

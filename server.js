@@ -9,7 +9,6 @@ import swaggerJSDoc from 'swagger-jsdoc';
 import SwaggerUI from 'swagger-ui-express';
 import  {options} from './src/swagger/index.js';
 
-
 const app = express();
 
 app.use(cors());
